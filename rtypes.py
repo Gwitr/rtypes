@@ -78,6 +78,9 @@ def verify_type(name, x, t):
 
 class TypedObject():
 
+    __dict__: Any
+    __class__: Any
+
     weak_typing = False
 
     def __getattribute__(self, x):
